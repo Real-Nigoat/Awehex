@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
             break;
         }
         for (int i = 0; i < row_size; i++) {
-            std::cout << std::setw(2) << std::setfill('0') << std::hex << static_cast<int>(buffer[i]) << " "; // print the current byte as two digit hexadecimal
+            std::cout << std::setw(2) << std::setfill('0') << std::hex << static_cast<int>(static_cast<unsigned char>(buffer[i])) << " "; // print the current byte as two digit hexadecimal
             }
          std::cout << '\n'; // end current hex row
         }
