@@ -28,6 +28,6 @@ int main(int argc, char *argv[]) {
             std::cout << std::setw(2) << std::setfill('0') << std::hex << static_cast<int>(buffer[i]) << " "; // print the current byte as two digit hexadecimal
             }
          std::cout << '\n'; // end current hex row
-        return 0;
         }
+	return 0;
     }
